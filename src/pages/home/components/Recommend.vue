@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="item" v-for="item of recommendList" :key="item.id">
+      <li class="item" v-for="item of recommendList" :key="item.id" v-if="showRcommendList">
         <img class="item-img" :src="item.imgUrl" alt="">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,24 +17,12 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1701/f6/f6159f9ebfb534aca3.img.jpg_200x200_5e71b24c.jpg',
-        title: '京城周末撒欢',
-        desc: '在帝都过周末，不仅仅是城中游！'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1701/f6/f6159f9ebfb534aca3.img.jpg_200x200_5e71b24c.jpg',
-        title: '京城周末撒欢',
-        desc: '在帝都过周末，不仅仅是城中游！'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1701/f6/f6159f9ebfb534aca3.img.jpg_200x200_5e71b24c.jpg',
-        title: '京城周末撒欢',
-        desc: '在帝都过周末，不仅仅是城中游！'
-      }]
+  props: {
+    recommendList: Array
+  },
+  computed: {
+    showRcommendList () {
+      return this.recommendList.length
     }
   }
 }
