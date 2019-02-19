@@ -1,23 +1,23 @@
 <template>
-  <div class="list" ref="wrapper">
-    <div>
-      <div class="area">
+  <div class="list" ref="listWrapper">
+    <ul class="list-wrapper">
+      <li class="area">
         <div class="title">当前城市</div>
         <div class="button-list">
           <div class="button-wrapper">
             <div class="button">北京</div>
           </div>
         </div>
-      </div>
-      <div class="area">
+      </li>
+      <li class="area">
         <div class="title">热门城市</div>
         <div class="button-list">
           <div class="button-wrapper">
             <div class="button">北京</div>
           </div>
         </div>
-      </div>
-      <div class="area">
+      </li>
+      <li class="area">
         <div class="title">A</div>
         <div class="item-list">
           <div class="item">阿拉尔</div>
@@ -30,8 +30,8 @@
           <div class="item">阿拉尔</div>
           <div class="item">阿拉尔</div>
         </div>
-      </div>
-      <div class="area">
+      </li>
+      <li class="area">
         <div class="title">A</div>
         <div class="item-list">
           <div class="item">阿拉尔</div>
@@ -44,8 +44,8 @@
           <div class="item">阿拉尔</div>
           <div class="item">阿拉尔</div>
         </div>
-      </div>
-      <div class="area">
+      </li>
+      <li class="area">
         <div class="title">A</div>
         <div class="item-list">
           <div class="item">阿拉尔</div>
@@ -58,18 +58,18 @@
           <div class="item">阿拉尔</div>
           <div class="item">阿拉尔</div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-// import BScroll from 'better-scroll'
+import BScroll from 'better-scroll'
+
 export default {
   name: 'CityList',
   mounted () {
-    // this.scroll = new BScroll(this.$refs.wrapper)
-    // console.log(this.scroll)
+    this.scroll = new BScroll(this.$refs.listWrapper)
   }
 }
 </script>
@@ -77,7 +77,7 @@ export default {
 <style scoped lang="stylus">
   @import '~styles/varibles.styl'
   .list
-    overflow: hidden
+    overflow: auto
     position: absolute
     left: 0
     right: 0
