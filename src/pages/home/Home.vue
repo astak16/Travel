@@ -5,7 +5,6 @@
     <home-icons :iconList="iconList"></home-icons>
     <home-recommend :recommendList="recommendList"></home-recommend>
     <home-weekend :weekendList="weekendList"></home-weekend>
-    <div>不是最新</div>
   </div>
 </template>
 
