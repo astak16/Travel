@@ -5,7 +5,12 @@
     </div>
     <div class="search-content" ref="search" v-show="keyword">
       <ul>
-        <li class="search-item" v-for="item of list" :key="item.id">{{item.name}}</li>
+        <li class="search-item"
+            v-for="item of list"
+            :key="item.id"
+            @click="handleLetterClick(item.name)"
+        >
+          {{item.name}}</li>
         <li class="search-item" v-show="hasNoData">没有找到匹配数据</li>
       </ul>
     </div>
@@ -14,6 +19,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+import { mapMutations } from 'vuex'
 export default {
   name: 'Search',
   props: {
@@ -30,6 +36,15 @@ export default {
     hasNoData () {
       return !this.list.length
     }
+  },
+  methods: {
+    handleLetterClick (city) {
+      // this.$store.commit('changeCity', city)   等同于下面 this.changeCity(city) + ...mapMutations(['changeCity'])
+      this.changeCity(city)
+      this.$router.push('/')
+    },
+    // 有一个 mutation 叫做 changeCity，然后把 mutation 映射到当前组件中一个叫 changeCity 的方法里
+    ...mapMutations(['changeCity'])
   },
   watch: {
     keyword () {
@@ -54,7 +69,7 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new BScroll(this.$refs.search)
+    this.scroll = new BScroll(this.$refs.search, { mouseWheel: true, click: true, tap: true })
   }
 }
 </script>
