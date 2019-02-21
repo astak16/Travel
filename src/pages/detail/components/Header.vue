@@ -14,7 +14,7 @@
           <span class="iconfont header-fixed-back">&#xe63b;</span>
         </router-link>
       </div>
-      景点详情
+      景点详情w3243
     </div>
   </div>
 </template>
