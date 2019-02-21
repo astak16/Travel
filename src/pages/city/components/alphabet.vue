@@ -5,10 +5,10 @@
         :key="key"
         :ref="key"
         @click="handleLetterClick"
-        @touchstart="handleTouchStart"
+        @touchstart.prevent="handleTouchStart"
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
-    >{{key}}</li>
+    >{{key}}</li>   //.prevent 可以阻止 touch 的默认行为
   </ul>
 </template>
 
