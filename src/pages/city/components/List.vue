@@ -105,7 +105,7 @@ export default {
     .item-list
       .item
         font-size: 14px
-      line-height: .76rem
-      padding-left: .2rem
-      border-bottom: 1px solid #ccc
+        line-height: .76rem
+        padding-left: .2rem
+        border-bottom: 1px solid #ccc
 </style>

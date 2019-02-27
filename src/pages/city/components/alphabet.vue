@@ -8,7 +8,7 @@
         @touchstart.prevent="handleTouchStart"
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
-    >{{key}}</li>   //.prevent 可以阻止 touch 的默认行为
+    >{{key}}</li>  <!-- .prevent 可以阻止 touch 的默认行为 -->
   </ul>
 </template>
 

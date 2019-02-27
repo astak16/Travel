@@ -1,9 +1,9 @@
 <template>
 <div>
   <div
-      class="item"
-      v-for="(item, index) of categoryList"
-      :key="index"
+    class="item"
+    v-for="(item, index) of categoryList"
+    :key="index"
   >
     <div class="item-title">
       <span class="item-title-icon"></span>

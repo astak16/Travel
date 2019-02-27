@@ -8,7 +8,11 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'styles/reset.css'
 import 'styles/iconfont.css'
 import 'swiper/dist/css/swiper.css'
-import 'babel-polyfill'   // 让不支持 proxyTable 的浏览器支持
+// 让不支持 proxyTable 的浏览器支持
+import 'babel-polyfill'
+import FastClick from 'fastclick'
+FastClick.attach(document.body)
+
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */
