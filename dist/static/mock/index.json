@@ -1,0 +1,106 @@
+{
+  "ret": true,
+  "data": {
+    "iconList": [
+      {
+        "id": "0001",
+        "iconUrl": "https://fms.res.meizu.com/dms/2018/12/28/20b9fcff-8ec0-4c8a-8619-014f1e31716e.jpg",
+        "desc": "景点门票景点门票景点门票"
+      },
+      {
+        "id": "0002",
+        "iconUrl": "https://fms.res.meizu.com/dms/2018/11/19/bd78ec91-b232-479e-9b8b-3df2cca4c19a.png",
+        "desc": "滑雪季节"
+      },
+      {
+        "id": "0003",
+        "iconUrl": "https://fms.res.meizu.com/dms/2019/01/31/2b85640e-a27e-49ea-aa90-3e9159852010.jpg",
+        "desc": "泡温泉"
+      },
+      {
+        "id": "0004",
+        "iconUrl": "https://fms.res.meizu.com/dms/2019/02/13/f6928733-b38b-4f80-93f8-afea37c0ecc4.png",
+        "desc": "动植物节"
+      },
+      {
+        "id": "0005",
+        "iconUrl": "https://fms.res.meizu.com/dms/2018/12/28/20b9fcff-8ec0-4c8a-8619-014f1e31716e.jpg",
+        "desc": "一日游"
+      },
+      {
+        "id": "0006",
+        "iconUrl": "https://fms.res.meizu.com/dms/2018/11/19/bd78ec91-b232-479e-9b8b-3df2cca4c19a.png",
+        "desc": "必游榜单"
+      },
+      {
+        "id": "0007",
+        "iconUrl": "https://fms.res.meizu.com/dms/2019/01/31/2b85640e-a27e-49ea-aa90-3e9159852010.jpg",
+        "desc": "自然风光"
+      },
+      {
+        "id": "0008",
+        "iconUrl": "https://fms.res.meizu.com/dms/2019/02/13/f6928733-b38b-4f80-93f8-afea37c0ecc4.png",
+        "desc": "全部"
+      },
+      {
+        "id": "0009",
+        "iconUrl": "https://fms.res.meizu.com/dms/2019/02/13/f6928733-b38b-4f80-93f8-afea37c0ecc4.png",
+        "desc": "全部2"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1701/f6/f6159f9ebfb534aca3.img.jpg_200x200_5e71b24c.jpg",
+        "title": "京城周末撒欢",
+        "desc": "在帝都过周末，不仅仅是城中游！"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1701/f6/f6159f9ebfb534aca3.img.jpg_200x200_5e71b24c.jpg",
+        "title": "京城周末撒欢",
+        "desc": "在帝都过周末，不仅仅是城中游！"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1701/f6/f6159f9ebfb534aca3.img.jpg_200x200_5e71b24c.jpg",
+        "title": "京城周末撒欢",
+        "desc": "在帝都过周末，不仅仅是城中游！"
+      }
+    ],
+    "swiperList": [
+      {
+        "id": "0001",
+        "imgUrl": "//i8.mifile.cn/v1/a1/a40dde16-6796-fc8d-2fb4-4983106ab8fb!720x360.webp"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "//i8.mifile.cn/v1/a1/f91bc067-b5cb-02da-e0a8-cc3fe812b76b!720x360.webp"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "//i8.mifile.cn/v1/a1/3bd24537-a0f9-58d7-d468-e158b67af652!720x360.webp"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+        "title": "京城有好泉",
+        "desc": "细数北京温泉，温暖你的冬天"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+        "title": "京城有好泉",
+        "desc": "细数北京温泉，温暖你的冬天"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+        "title": "京城有好泉",
+        "desc": "细数北京温泉，温暖你的冬天"
+      }
+    ]
+  }
+}
