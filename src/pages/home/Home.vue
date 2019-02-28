@@ -16,6 +16,9 @@ import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import axios from 'axios'
 import { mapState } from 'vuex'
+
+const debug = process.env.NODE_ENV !== 'production'
+
 export default {
   name: 'Home',
   components: {
@@ -39,7 +42,8 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json?city=' + this.city).then(this.getHomeInfoSucc)
+      const url = debug ? '/api/index.json?city=' + this.city : 'https://astak16.github.io/Travel/static/mock/index.json'
+      axios.get(url).then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
       res = res.data
