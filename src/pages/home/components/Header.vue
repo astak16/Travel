@@ -50,16 +50,17 @@ export default {
     line-height: .64rem
     margin-top:.12rem
     margin-left:.2rem
+    padding-left: .2rem
     background: #fff
     border-radius:.1rem
     color: #cccccc
   .header-right
     min-width:1.04rem
-    padding: 0 .1rem
+    padding: 0 .1rem 0 .2rem
     float:right
     text-align: center
     color: #fff
     .arrow-icon
-      margin-left:-0.04rem
-      font-size:.5rem
+      margin-left:-0.1rem
+      font-size:.4rem
 </style>

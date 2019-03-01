@@ -13,7 +13,6 @@ import CityHeader from './components/Header'
 import CitySearch from './components/Search'
 import CityList from './components/List'
 import CityAlphabet from './components/alphabet'
-const debug = process.env.NODE_ENV !== 'production'
 
 export default {
   name: 'City',
@@ -32,8 +31,7 @@ export default {
   },
   methods: {
     getCityInfo () {
-      const url = debug ? '/api/city.json' : 'https://astak16.github.io/Travel/dist/mock/city.json'
-      axios.get(url)
+      axios.get('/api/city.json')
         .then(this.handGetCityInfoSucc)
     },
     handGetCityInfoSucc (res) {

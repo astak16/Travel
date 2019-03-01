@@ -10,10 +10,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
-const city = require('../static/mock/city.json')
-const detail = require('../static/mock/detail.json')
-const index = require('../static/mock/index.json')
-
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
@@ -26,26 +22,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
-    before(app) {
-      app.get('/api/city', function (req, res) {
-        res.json({
-          errno: 0,
-          data: city
-        })
-      });
-      app.get('/api/detail', function (req, res) {
-        res.json({
-          errno: 0,
-          data: detail
-        })
-      });
-      app.get('/api/index', function (req, res) {
-        res.json({
-          errno: 0,
-          data: index
-        })
-      });
-    },
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
