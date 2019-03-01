@@ -13,7 +13,7 @@ import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailLsit from './components/List'
 import axios from 'axios'
-const debug = process.env.NODE_ENV !== 'production'
+const debug = process.env.NODE_ENV !== 'production';
 
 export default {
   name: 'Detail',
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      const url = debug ? '/api/detail.json' : 'https://astak16.github.io/Travel/static/mock/detail.json'
+      const url = debug ? '/api/detail' : 'https://astak16.github.io/Travel/static/mock/detail.json'
       axios.get(url, {
         params: {
           id: this.$route.params.id
