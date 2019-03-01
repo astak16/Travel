@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getCityInfo () {
-      const url = debug ? '/api/city' : 'https://astak16.github.io/Travel/static/mock/city.json'
+      const url = debug ? '/api/city' : 'https://astak16.github.io/Travel/dist/mock/city.json'
       axios.get(url)
         .then(this.handGetCityInfoSucc)
     },

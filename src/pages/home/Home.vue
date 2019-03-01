@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      const url = debug ? '/api/index' : 'https://astak16.github.io/Travel/static/mock/index.json'
+      const url = debug ? '/api/index' : 'https://astak16.github.io/Travel/dsit/mock/index.json'
       axios.get(url + '?city=' + this.city).then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {

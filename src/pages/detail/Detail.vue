@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      const url = debug ? '/api/detail' : 'https://astak16.github.io/Travel/static/mock/detail.json'
+      const url = debug ? '/api/detail' : 'https://astak16.github.io/Travel/dist/mock/detail.json'
       axios.get(url, {
         params: {
           id: this.$route.params.id
